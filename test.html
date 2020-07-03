@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="test.css">
+</head>
+<body >
+    <div class="header">
+        <h1>Memoji</h1>
+    </div>
+    <section class="main">
+        <div class="top"><div class="bot" data-animal="first">🦀</div></div>
+        <div class="top"><div class="bot" data-animal="second">🐊</div></div>
+        <div class="top"><div class="bot" data-animal="third">🐓</div></div>
+        <div class="top"><div class="bot" data-animal="third">🐓</div></div>
+        <div class="top"><div class="bot" data-animal="fourth">🐟</div></div>
+        <div class="top"><div class="bot" data-animal="fifth">🦃</div></div>
+        <div class="top"><div class="bot" data-animal="fourth">🐟</div></div>
+        <div class="top"><div class="bot" data-animal="sixth">🐿</div></div>
+        <div class="top"><div class="bot" data-animal="first">🦀</div></div>
+        <div class="top"><div class="bot" data-animal="fifth">🦃</div></div>
+        <div class="top"><div class="bot" data-animal="second">🐊</div></div>
+        <div class="top"><div class="bot" data-animal="sixth">🐿</div></div>
+
+    </section>
+    <div class="timer">
+        <h2>60</h2>
+    </div>
+    <div class="result">
+        <div id="Modal" class="Modal Modal_none">
+            <div class="Modal_Body">
+                <h2 class="Modal_text"></h2>
+                <input type="button" class="try_again" value="">
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="rotate_upd.js"></script>
+    <script type="text/javascript" src="shuffle.js"></script>
+    <script>
+        $(".main .top").shuffle();
+    </script>
+    <script src="timer.js"></script>
+</body>
+
+</html>
